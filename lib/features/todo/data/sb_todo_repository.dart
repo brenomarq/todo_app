@@ -5,10 +5,10 @@ import 'package:todo_app/core/errors/app_exception.dart';
 import 'package:todo_app/features/todo/domain/todo_model.dart';
 import 'package:todo_app/features/todo/domain/todo_repository.dart';
 
-class TodoRepositoryImpl implements TodoRepository {
+class SbTodoRepository implements TodoRepository {
   final SupabaseClient _client;
 
-  const TodoRepositoryImpl(this._client);
+  const SbTodoRepository(this._client);
 
   // Atalho para pegar o ID do usuário logado
   // Lança exceção se não houver usuário — nunca chegamos aqui sem auth
